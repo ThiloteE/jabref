@@ -7,7 +7,6 @@ public enum AiProvider implements Serializable {
     MISTRAL_AI("Mistral AI", "https://api.mistral.ai/v1", "https://mistral.ai/terms/#privacy-policy"),
     GEMINI("Gemini", "https://generativelanguage.googleapis.com/v1beta/", "https://ai.google.dev/gemini-api/terms"),
     HUGGING_FACE("Hugging Face", "https://router.huggingface.co/v1", "https://huggingface.co/privacy"),
-    GPT4ALL("GPT4All", "http://localhost:4891/v1", "https://www.nomic.ai/gpt4all/legal/privacy-policy");
 
     private final String label;
     private final String apiUrl;
