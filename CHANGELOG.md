@@ -76,6 +76,8 @@ Note that this project **does not** adhere to [Semantic Versioning](https://semv
 - We fixed exceptions occuring when generating citation keys or using certain cleanup operations on macOS [#15366](https://github.com/JabRef/jabref/issues/15366)
 
 ### Removed
+- We removed GPT4All as AI-provider as this project is currently unmaintained and doesn't receive any security updates
+
 
 ## [6.0-alpha.5] – 2026-02-20
 
