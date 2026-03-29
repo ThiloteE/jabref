@@ -47,7 +47,7 @@ public class JabRefChatLanguageModel implements ChatModel, AutoCloseable {
     /// and see {@link org.jabref.logic.ai.chatting.chathistory.ChatHistoryStorage}.
     private void rebuild() {
         String apiKey = aiPreferences.getApiKeyForAiProvider(aiPreferences.getAiProvider());
-        if (!aiPreferences.getEnableAi() {
+        if (!aiPreferences.getEnableAi()) {
             langchainChatModel = Optional.empty();
             return;
         }
