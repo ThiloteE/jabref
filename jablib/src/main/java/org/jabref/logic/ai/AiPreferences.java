@@ -389,6 +389,7 @@ public class AiPreferences {
                         AiDefaultPreferences.getContextWindowSize(AiProvider.HUGGING_FACE, huggingFaceChatModel.get());
                 case GEMINI ->
                         AiDefaultPreferences.getContextWindowSize(AiProvider.GEMINI, geminiChatModel.get());
+            };
         }
     }
 
