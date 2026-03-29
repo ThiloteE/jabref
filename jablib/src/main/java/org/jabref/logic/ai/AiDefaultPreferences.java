@@ -25,7 +25,7 @@ public class AiDefaultPreferences {
         GEMINI_1_0_PRO(AiProvider.GEMINI, "gemini-1.0-pro", 32000),
         // Dummy variant for Hugging Face models.
         // Blank entry used for cases where the model name is not specified.
-        BLANK_HUGGING_FACE(AiProvider.HUGGING_FACE, "", 0),
+        BLANK_HUGGING_FACE(AiProvider.HUGGING_FACE, "", 0);
 
         private final AiProvider aiProvider;
         private final String name;
