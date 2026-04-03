@@ -211,6 +211,7 @@ public class AiTab extends AbstractPreferenceTabView<AiTabViewModel> implements 
 
     private void initializeApiKey() {
         apiKeyTextField.textProperty().bindBidirectional(viewModel.apiKeyProperty());
+        apiKeyTextField.disableProperty().bind(viewModel.disableBasicSettingsProperty());
     }
 
     private void initializeChatModel() {
