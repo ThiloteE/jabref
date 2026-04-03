@@ -1949,7 +1949,7 @@ public class JabRefCliPreferences implements CliPreferences {
                 getBoolean(AI_AUTO_GENERATE_SUMMARIES),
                 getBoolean(AI_GENERATE_FOLLOW_UP_QUESTIONS),
                 getInt(AI_FOLLOW_UP_QUESTIONS_COUNT),
-                AiProvider.valueOf(get(AI_PROVIDER)),
+                AiProvider.fromString(get(AI_PROVIDER)),
                 get(AI_OPEN_AI_CHAT_MODEL),
                 get(AI_MISTRAL_AI_CHAT_MODEL),
                 get(AI_GEMINI_CHAT_MODEL),

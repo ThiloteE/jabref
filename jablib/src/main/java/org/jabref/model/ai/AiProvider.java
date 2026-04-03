@@ -1,6 +1,7 @@
 package org.jabref.model.ai;
 
 import java.io.Serializable;
+import java.util.Arrays;
 
 public enum AiProvider implements Serializable {
     OPEN_AI("OpenAI (or API compatible)", "https://api.openai.com/v1", "https://openai.com/policies/privacy-policy/"),
@@ -32,6 +33,13 @@ public enum AiProvider implements Serializable {
 
     public String toString() {
         return label;
+    }
+
+    public static AiProvider fromString(String value) {
+        return Arrays.stream(values())
+                .filter(aiProvider -> aiProvider.name().equals(value))
+                .findFirst()
+                .orElse(OPEN_AI); // default value
     }
 }
 
