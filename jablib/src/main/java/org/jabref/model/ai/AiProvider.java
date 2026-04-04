@@ -37,9 +37,9 @@ public enum AiProvider implements Serializable {
 
     public static AiProvider fromString(String value) {
         return Arrays.stream(values())
-                .filter(aiProvider -> aiProvider.name().equals(value))
-                .findFirst()
-                .orElse(OPEN_AI); // default value
+                     .filter(aiProvider -> aiProvider.name().equals(value))
+                     .findFirst()
+                     .orElse(OPEN_AI); // default value
     }
 }
 
